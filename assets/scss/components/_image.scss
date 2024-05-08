@@ -1,0 +1,45 @@
+.img_wrap {
+    text-align: center;
+
+    picture {
+        display: block;
+        max-width: 100rem;
+        margin: 0 auto;
+    }
+
+    b:has(+ picture, + .box_grid) {
+        display: block;
+        margin-bottom: 5rem;
+
+        @include md {
+            margin-bottom: 3rem;
+        }
+        @include sm {
+            margin-bottom: 1.4rem;
+        }
+    }
+}
+
+.img_gap {
+    &_lg {
+        margin: 10rem auto;
+
+        @include md {
+            margin: 5rem auto;
+        }
+        @include sm {
+            margin: 3rem auto;
+        }
+    }
+
+    &_md {
+        margin: 8rem auto;
+
+        @include md {
+            margin: 4rem auto;
+        }
+        @include sm {
+            margin: 3rem auto;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.tab {
+    &_list {
+        @include flexbox(row, flex-start, center);
+
+        gap: 2rem;
+        flex-wrap: wrap;
+
+        @include md {
+            gap: 1.4rem;
+        }
+
+        @include sm {
+            gap: 1rem;
+        }
+
+        li {
+            button {
+                font-size: 1.6rem;
+                font-weight: 600;
+                color: $color8D;
+                padding: 0 3rem;
+                height: 4rem;
+                border: 1px solid $color4F;
+                border-radius: 2rem;
+                transition: 0.15s all;
+
+                &.active {
+                    color: $white;
+                    background: $primary;
+                    border: 1px solid $primary;
+                }
+
+                @include md {
+                    font-size: 1.4rem;
+                }
+
+                @include sm {
+                    font-size: 1.3rem;
+                    height: 3rem;
+                    padding: 0 2rem;
+                }
+            }
+        }
+    }
+
+    &_content {
+        display: none;
+        margin-top: 5rem;
+
+        @include sm {
+            margin-top: 3rem;
+        }
+
+        &.active {
+            display: block;
+        }
+    }
+}

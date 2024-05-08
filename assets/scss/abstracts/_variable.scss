@@ -1,0 +1,65 @@
+$primary: #293097; // 포인트 색상
+$color53: #1b1f53;
+$white: #ffffff;
+$black: #000000;
+// $color26: #262626; // 기본 글자색
+// $colorFC: #fc4545; // alert_fail
+// $color1E: #1ea76e; // alert_success
+
+$color8D: #8d8d8d; // gray01
+$color4F: #4f4f4f; // gray02
+$color2D: #2d2d2d; // dark_gray01
+$color20: #202020; // dark_gray02
+$color11: #111111; // dark_gray03
+
+$colorFF: #c9d5ff;
+$color9D: #62689d;
+
+// 컬러명클래스,
+$color: 'primary' $primary, 'dark_blue' $color53, 'gray01' $color8D, 'gray02' $color4F, 'dark_gray01' $color2D, 'dark_gray02' $color20, 'dark_gray03' $color11, 'white' $white,
+    'black' $black;
+
+$imgurl: '../images/';
+
+// 클래스, 높이, 좌우여백, 폰트크기, 폰트굵기 | 높이, 좌우여백, 폰트크기 | 좌우여백 , 폰트크기
+$btnsize: 'basic' 50 50 18 600 40 40 16 30 14, 'subscribe' 40 30 16 600 30 20 14 18 14;
+// 클래스, 배경, 선, 텍스트
+$btncolor: 'blue_out' $white $primary $primary, 'blue' $primary $primary $white, 'mono' transparent $color4F $color8D;
+
+$btnradius: 16, 15, 10, 8, 4;
+
+// 클래스명, 파일명, 가로, 세로
+$nav: 1 'icon-nav-1.svg' 24 24, 2 'icon-nav-2.svg' 24 24, 3 'icon-nav-3.svg' 24 24, 4 'icon-nav-4.svg' 24 24, 5 'icon-nav-5.svg' 24 24, 6 'icon-nav-6.svg' 24 24,
+    7 'icon-nav-7.svg' 24 24, 8 'icon-nav-8.svg' 24 24, 9 'icon-nav-9.svg' 24 24, 10 'icon-nav-10.svg' 24 24, 11 'icon-nav-11.svg' 24 24, 12 'icon-nav-12.svg' 24 24,
+    13 'icon-nav-13.svg' 24 24, 14 'icon-nav-14.svg' 24 24, 15 'icon-nav-15.svg' 24 24, 16 'icon-nav-16.svg' 24 24, 17 'icon-nav-17.svg' 24 24, 18 'icon-nav-18.svg' 24 24,
+    19 'icon-nav-19.svg' 24 24, 20 'icon-nav-20.svg' 24 24, 21 'icon-nav-21.svg' 24 24, 22 'icon-nav-22.svg' 24 24, 23 'icon-nav-23.svg' 24 24, 24 'icon-nav-24.svg' 24 24;
+
+// 클래스명, 파일명, 가로, 세로, 마진
+
+$btnicon:
+    // 0 '@ico_icon.svg' 16 16 5,
+    1 'btn_arrow.svg' 20 20 0,
+    // View All Blocks 효과
+    2 'circle_del_gray.svg' 20 20 0,
+    3 'btn_search.svg' 20 20 0, 4 'btn_del_bk.svg' 8 8 0;
+
+// 클래스명, 파일명, 가로, 세로
+$icon: 0 '@ico_icon.svg' 16 16, 1 'btn_arrow-gray.svg' 30 30,
+    // 모바일 메뉴 화살표
+    2 'btn_arrow-white.svg' 30 30,
+    // 모바일 메뉴 화살표
+    3 'ico_system.svg' 30 30,
+    // 에코시스템 아이콘
+;
+
+// 카드 아이콘 : 클래스명, 파일경로/파일명, 가로, 세로
+$cardicon: 0 'card/card_none.svg' 40 40, 1 'card/card_bc.svg' 40 40, 2 'card/card_citi.svg' 40 40, 3 'card/card_gwangju.svg' 40 40, 4 'card/card_hana.svg' 40 40,
+    5 'card/card_hyundai.svg' 40 40, 6 'card/card_jeju.svg' 40 40, 7 'card/card_jeonbuk.svg' 40 40, 8 'card/card_kb.svg' 40 40, 9 'card/card_lotte.svg' 40 40,
+    10 'card/card_master.svg' 40 40, 11 'card/card_nh.svg' 40 40, 12 'card/card_samsung.svg' 40 40, 13 'card/card_sinhan.svg' 40 40, 14 'card/card_suhyup.svg' 40 40,
+    15 'card/card_visa.svg' 40 40, 16 'card/card_woori.svg' 40 40;
+
+// 반응형(카단)
+$sm: 320px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;

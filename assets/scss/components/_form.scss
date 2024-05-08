@@ -1,0 +1,28 @@
+// // 메인 메일 input
+// %form {
+//     height:rem(40);
+//     border-bottom:1px solid $color4F;
+//     background-color: transparent;
+//     box-sizing: border-box;
+//     font-size: rem(13);
+//     color:$white;
+//     outline: none;
+//     &::placeholder{
+//         color:$color4F;
+//     }
+//     &:disabled {
+//         color:$color4F;
+//     }
+// }
+
+// %form-reset {
+//     -webkit-appearance: none;
+// }
+
+// select {
+//     @extend %form;
+//     @include select(rem(16), rem(40));
+//     &:disabled{
+//         background-color: $colorF7;
+//     }
+// }

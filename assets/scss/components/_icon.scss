@@ -1,0 +1,19 @@
+%icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+%navicon {
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.icon{
+    @extend %icon;
+    
+    // 네비 아이콘
+    &-nav {
+        @extend %navicon;
+    }
+}

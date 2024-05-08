@@ -1,0 +1,23 @@
+%dimmed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0; 
+    bottom: 0;
+    z-index: 200;
+    opacity: 50%;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter : blur(5px);
+}
+.dimmed{
+    @extend %dimmed;
+
+    display: block;
+    background: $black;
+    &-white{
+        @extend %dimmed;
+
+        display: block;
+        background: $black;
+    }
+}

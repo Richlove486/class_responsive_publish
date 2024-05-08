@@ -1,0 +1,15 @@
+button {
+    &:disabled {
+        border-color: $white !important;
+        background-color: $white !important;
+        color: $white !important;
+    }
+}
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    &.full {
+        width: 100%;
+    }
+}

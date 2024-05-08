@@ -1,0 +1,140 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    > li {
+        position: relative;
+        > span {
+            font-size: rem(18);
+            font-weight: 700;
+            color: $white;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                color: $primary;
+            }
+        }
+        &.active {
+            display: block;
+            > span {
+                color: $primary;
+            }
+            .menu__depth {
+                display: block;
+            }
+        }
+    }
+    &__depth {
+        display: none;
+
+        position: absolute;
+        top: rem(85);
+        left: rem(-30);
+        background-color: $black;
+        min-width: calc(rem(300) - rem(48));
+        padding: rem(24);
+        border-radius: rem(14);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-sizing: border-box;
+        @include tablet {
+            position: relative;
+            top: unset;
+            left: unset;
+            background-color: $color11;
+            min-width: calc(100% - rem(48));
+        }
+        @include mobile {
+            position: relative;
+            padding: rem(20);
+            min-width: calc(100% - rem(40));
+        }
+        &::before {
+            content: '';
+            position: absolute;
+        }
+        > li {
+            padding: rem(14) 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            .icon-nav {
+                &:before {
+                    flex-shrink: 0;
+                    transition: all 0.3s;
+                }
+            }
+            &:hover {
+                .sub_tit {
+                    color: $primary;
+                }
+                @for $i from 1 to 28 {
+                    .nav#{$i} {
+                        &:before {
+                            background: url(../images/icon-nav-#{$i}-1.svg) no-repeat;
+                        }
+                    }
+                }
+            }
+            &:first-child {
+                padding-top: 0;
+            }
+            &:last-child {
+                padding-bottom: 0;
+                border-bottom: none;
+            }
+        }
+        .sub_tit {
+            font-size: rem(14);
+            color: $white;
+            transition: all 0.3s;
+        }
+        .sub_tit_desc {
+            font-size: rem(12);
+            color: $color8D;
+        }
+    }
+}
+
+/* 2024.03.05 카단 - 메뉴 부분 수정 */
+.menu {
+    &_wrap {
+        padding-top: 1rem;
+    }
+
+    &__depth {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s all;
+        // transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+        background-color: unset;
+        border: unset;
+        left: 0;
+        top: 9.5rem;
+
+        @include lg {
+            top: 0;
+        }
+
+        @include tablet {
+            display: none;
+            opacity: unset;
+            visibility: unset;
+            background-color: $color11;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        li{
+            a{
+                width: 100%;
+                justify-content: flex-start;
+            }
+        }
+    }
+
+    .tit {
+        &:hover {
+            .menu__depth {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+}

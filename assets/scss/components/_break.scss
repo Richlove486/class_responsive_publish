@@ -1,0 +1,17 @@
+.break_lg {
+    @include sm {
+        display: none;
+    }
+}
+
+.break_md {
+    @media all and (max-width: 767px) and (min-width: 1024px) {
+        display: none;
+    }
+}
+
+.break_mo {
+    @media all and (min-width: 1023px) {
+        display: none;
+    }
+}

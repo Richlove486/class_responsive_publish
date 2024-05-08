@@ -1,0 +1,198 @@
+/* text */
+.word {
+    word-break: break-all;
+}
+h2 {
+    font-size: 7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+    color: $white;
+    transform-origin: left;
+
+    @include md {
+        font-size: 3.6rem;
+    }
+    @include sm {
+        font-size: 3rem;
+    }
+}
+h3 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: $white;
+    transform-origin: left;
+
+    @include md {
+        font-size: 3rem;
+    }
+
+    @include sm {
+        font-size: 2rem;
+    }
+}
+h4 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: $white;
+    transform-origin: left;
+
+    @include md {
+        font-size: 2rem;
+    }
+
+    @include sm {
+        font-size: 1.6rem;
+    }
+}
+
+h5 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: $white;
+    transform-origin: left;
+
+    @include md {
+        font-size: 1.6rem;
+    }
+
+    @include sm {
+        font-size: 1.4rem;
+    }
+}
+
+.txt {
+    display: inline-block;
+
+    &-24 {
+        font-size: rem(24);
+    }
+    &-18 {
+        font-size: rem(18);
+    }
+    &-16 {
+        font-size: rem(16);
+    }
+    &-14 {
+        font-size: rem(14);
+    }
+    &-13 {
+        font-size: rem(13);
+    }
+    &-12 {
+        font-size: rem(12);
+    }
+
+    &_wrap {
+        &_sm {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            @include md {
+                gap: 0.6rem;
+            }
+            @include sm {
+                gap: 1.4rem;
+            }
+
+            span {
+                font-size: 1.4rem;
+                display: block;
+                color: $white;
+
+                @include md {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        &_md {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            @include md {
+                gap: 1rem;
+            }
+
+            span {
+                font-size: 1.4rem;
+                // display: block;
+                color: $white;
+
+                @include md {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        &_lg {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            @include md {
+                gap: 1.4rem;
+            }
+
+            span {
+                font-size: 1.4rem;
+                display: block;
+                color: $white;
+
+                @include md {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+
+    &_sub {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: $primary;
+
+        @include md {
+            font-size: 1.6rem;
+        }
+
+        @include sm {
+            font-size: 1.4rem;
+        }
+    }
+
+    &_desc {
+        font-size: 1.4rem;
+        display: block;
+        color: $white;
+
+        @include md {
+            font-size: 1.3rem;
+        }
+    }
+
+    // style
+    &-underline {
+        text-decoration: underline;
+    }
+}
+
+.fs {
+    &-24 {
+        font-size: 2.4rem;
+    }
+}
+
+.black {
+    font-weight: 900;
+}
+.bold {
+    font-weight: 700;
+}
+.smbold {
+    font-weight: 600;
+}
+.medium {
+    font-weight: 500;
+}

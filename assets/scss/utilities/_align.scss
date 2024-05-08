@@ -1,0 +1,98 @@
+/* align */
+.align {
+    display: flex;
+    &.inline{
+        display: inline-flex;
+    }
+    &.right {
+        justify-content: flex-end;
+    }
+    &.center{
+        justify-content: center;
+    }
+    &.both {
+        justify-content: space-between;
+    }
+    &.bottom{
+        position: fixed;
+        left:rem(20);
+        right:rem(20);
+        bottom:rem(30);
+    }
+    &.f-wrap{
+        flex-wrap : wrap;
+    }
+    &.col{
+        flex-direction: column;
+    }
+    &.vt {
+        align-items: flex-start;
+    }
+    &.vm {
+        align-items: center;
+    }
+    &.vb {
+        align-items: flex-end;
+    }
+    &.triple{
+        display: block;
+        position: relative;
+        &::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+        }
+        .center{
+            @include posi(left,50%,top,0);
+        }
+        .bottom{
+            position: fixed;
+            left: 0;
+            right:0;
+            bottom: 0;
+            z-index: 10;
+        }
+    }
+    // 버튼 영역
+    &-btn {
+        display: flex;
+        gap:rem(10);
+        .btn {
+            flex:1;
+        }
+    }
+    // 간격조절
+    &.gap{
+        &5 { gap: rem(5);}
+        &10 { gap: rem(10);}
+        &15 { gap: rem(15);}
+    }
+}
+// 텍스트 정렬
+.txt{
+    &_left {
+        text-align: left !important;
+    }
+    &_center {
+        text-align: center !important;
+    }
+    &_right {
+        text-align: right !important;
+    }
+}
+
+.flex{
+    display: flex;
+    > * {
+        flex: 1;
+    }
+    &.none{
+        flex: none;
+    }
+}

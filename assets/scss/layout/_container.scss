@@ -1,0 +1,28 @@
+.wrap {
+    padding: 0 2.4rem;
+
+    @include sm {
+        padding: 0 2rem;
+    }
+}
+
+.container {
+    width: 120rem;
+    margin: 0 auto;
+
+    @include lg {
+        width: 100%;
+    }
+}
+
+main {
+    padding-bottom: 20rem;
+
+    @include md {
+        padding-bottom: 10rem;
+    }
+
+    @include sm {
+        padding-bottom: 8rem;
+    }
+}

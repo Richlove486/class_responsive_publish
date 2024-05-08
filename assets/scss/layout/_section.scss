@@ -1,0 +1,112 @@
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    width: initial;
+    max-height: 100rem;
+    overflow: hidden;
+
+    // clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+
+    @include md {
+        height: 35rem;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+        overflow-x: hidden;
+        opacity: 0;
+
+        @include md {
+            // object-fit: cover;
+            opacity: 1;
+        }
+    }
+    &.company {
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgb(3, 3, 3), rgba(3, 3, 3, 0) 10%);
+        }
+    }
+    &.company.main {
+        height: 100rem;
+
+        @include md {
+            img {
+                content: url(../images/backgrounds/bg_companyMain_md.png);
+            }
+        }
+        @include sm {
+            img {
+                content: url(../images/backgrounds/bg_companyMain_sm.png);
+            }
+        }
+    }
+
+    &_gradient {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(37, 125, 215, 1), rgba(37, 125, 215, 0));
+        // opacity: 0.3;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+
+        @include md {
+            opacity: 0.3;
+        }
+    }
+}
+
+section {
+    b {
+        font-size: 3rem;
+        font-weight: 600;
+        color: $primary;
+
+        @include md {
+            font-size: 2.4rem;
+        }
+
+        @include sm {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 15rem;
+
+    @include md {
+        gap: 10rem;
+    }
+
+    @include sm {
+        gap: 8rem;
+    }
+}
+
+.section01 {
+    opacity: 0;
+
+    @include md {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,217 @@
+// IR
+@mixin hide {
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    border: 0;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+@mixin bg($file, $x: null, $y: null, $w: null, $h: null, $color: null) {
+    background: url(#{$imgurl}#{$file}) no-repeat $x $y;
+    background-size: $w $h;
+    background-color: $color;
+}
+
+// 배경색
+@each $class, $bgcolor in $color {
+    .bg-#{$class} {
+        background-color: $bgcolor;
+    }
+}
+// 텍스트색
+@each $class, $txtcolor in $color {
+    .txt-#{$class} {
+        color: $txtcolor;
+    }
+}
+
+@each $class, $h, $pad, $fs, $fw, $tb-h, $tb-pad, $tb-fs, $m-pad, $m-fs in $btnsize {
+    .btn.#{$class} {
+        padding: 0 rem($pad);
+        height: rem($h);
+        line-height: rem($h - 2);
+        border: 1px solid;
+        border-radius: rem($h);
+        box-sizing: border-box;
+        font-size: rem($fs);
+        font-weight: $fw;
+
+        // @include tablet {
+        //     height: rem($tb-h);
+        //     padding: 0 rem($tb-pad);
+        //     font-size: rem($tb-fs);
+        // }
+        // @include mobile {
+        //     padding: 0 rem($m-pad);
+        //     font-size: rem($m-fs);
+        // }
+    }
+}
+@each $class, $bg, $border, $txt in $btncolor {
+    .btn.#{$class} {
+        background: $bg;
+        border-color: $border;
+        color: $txt;
+    }
+}
+
+@each $radius in $btnradius {
+    .btn.ra#{$radius} {
+        border-radius: rem($radius);
+    }
+}
+
+@each $class, $name, $w, $h in $icon {
+    .icon.icon#{$class} {
+        &::before {
+            @include bg($name, null, null, cover);
+
+            content: '';
+            width: rem($w);
+            height: rem($h);
+        }
+    }
+}
+@each $class, $name, $w, $h in $nav {
+    .icon-nav.nav#{$class} {
+        &::before {
+            @include bg($name, null, null, cover);
+
+            content: '';
+            width: rem($w);
+            height: rem($h);
+        }
+    }
+}
+
+// 좌측 배치 버튼
+@each $class, $name, $w, $h, $margin in $btnicon {
+    .btn.icol#{$class} {
+        &::before {
+            @include bg($name, null, null, cover);
+
+            content: '';
+            width: rem($w);
+            height: rem($h);
+            margin-right: rem($margin);
+        }
+    }
+}
+// 우측 배치 버튼
+@each $class, $name, $w, $h, $margin in $btnicon {
+    .btn.icor#{$class} {
+        &::after {
+            @include bg($name, null, null, cover);
+
+            content: '';
+            width: rem($w);
+            height: rem($h);
+            margin-left: rem($margin);
+        }
+    }
+}
+
+//카드아이콘
+@each $class, $name, $w, $h in $cardicon {
+    .cicon.cico#{$class} {
+        &::after {
+            @include bg($name, null, null, cover);
+
+            content: '';
+            width: rem($w);
+            height: rem($h);
+        }
+    }
+}
+
+// 포지션 정의
+@mixin posi($x, $xv, $y, $yv) {
+    position: absolute;
+    #{$x}: $xv;
+    #{$y}: $yv;
+    @if $xv == 50% and $yv == 50% {
+        transform: translate(-50%, -50%);
+    } @else if $xv == 50% {
+        transform: translateX(-50%);
+    } @else if $yv == 50% {
+        transform: translateY(-50%);
+    }
+}
+
+// select화살표 초기화
+@mixin select($x, $pad) {
+    @include bg('btn_select.svg', right $x, center, null, null, #fff);
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: $pad;
+    &:disabled {
+        @include bg('btn_select_disabled.svg', right $x, center);
+    }
+    &::-ms-expand {
+        display: none;
+    }
+}
+
+// 말줄임표
+@mixin ellipsis($line: 1, $lh: null) {
+    @if $line == 1 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    } @else {
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: $line;
+        line-height: $lh;
+    }
+}
+
+// 스크롤바 디자인
+@mixin scroll($w, $c) {
+    &::-webkit-scrollbar {
+        width: $w;
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        width: $w;
+        // border-left: $w solid $c;
+        background-color: $c;
+        border-radius: $w;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+}
+
+/* 반응형 처리 */
+@mixin sm {
+    @media all and (max-width:#{$md - 1}) {
+        @content;
+    }
+}
+@mixin md {
+    @media all and (max-width:#{$lg - 1}) {
+        @content;
+    }
+}
+@mixin lg {
+    @media all and (max-width:#{$xl - 1}) {
+        @content;
+    }
+}
+
+/* 플렉스박스 */
+@mixin flexbox($d: column, $j: center, $a: center, $g: 0) {
+    display: flex;
+    flex-direction: $d;
+    justify-content: $j;
+    align-items: $a;
+    gap: #{$g}rem;
+}

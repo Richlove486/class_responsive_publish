@@ -1,0 +1,342 @@
+.mt {
+    &0 { margin-top: rem(0);}
+    &2 { margin-top: rem(2);}
+    &3 { margin-top: rem(3);}
+    &4 { margin-top: rem(4);}
+    &5 { margin-top: rem(5);}
+    &6 { margin-top: rem(6);}
+    &8 { margin-top: rem(8);}
+    &10 { margin-top: rem(10);}
+    &12 { margin-top: rem(12);}
+    &14 { margin-top: rem(14);}
+    &15 { margin-top: rem(15);}
+    &16 { margin-top: rem(16);}
+    &18 { margin-top: rem(18);}
+    &20 { margin-top: rem(20);}
+    &22 { margin-top: rem(22);}
+    &24 { margin-top: rem(24);}
+    &25 { margin-top: rem(25);}
+    &26 { margin-top: rem(26);}
+    &28 { margin-top: rem(28);}
+    &30 { margin-top: rem(30);}
+    &32 { margin-top: rem(32);}
+    &34 { margin-top: rem(34);}
+    &36 { margin-top: rem(36);}
+    &38 { margin-top: rem(38);}
+    &40 { margin-top: rem(40);}
+    &46 { margin-top: rem(46);}
+    &48 { margin-top: rem(48);}
+    &50 { margin-top: rem(50);}
+    &60 { margin-top: rem(60);}
+    &70 { margin-top: rem(70);}
+    &80 { margin-top: rem(80);}
+    &90 { margin-top: rem(90);}
+    &100 { margin-top: rem(100);}
+    &120 { margin-top: rem(120);}
+    &140 { margin-top: rem(140);}
+    &160 { margin-top: rem(160);}
+    &180 { margin-top: rem(180);}
+    &200 { margin-top: rem(200);}
+
+    &_responsive_sm {
+        margin-top: 2rem;
+
+        @include sm {
+            margin-top: 1rem;
+        }
+    }
+
+    &_responsive_lg {
+        margin-top: 8rem;
+
+        @include md {
+            margin-top: 4rem;
+        }
+
+        @include sm {
+            margin-top: 3rem;
+        }
+    }
+}
+.mb{
+    &0 { margin-bottom: rem(0);}
+    &2 { margin-bottom: rem(2);}
+    &3 { margin-bottom: rem(3);}
+    &4 { margin-bottom: rem(4);}
+    &5 { margin-bottom: rem(5);}
+    &6 { margin-bottom: rem(6);}
+    &8 { margin-bottom: rem(8);}
+    &10 { margin-bottom: rem(10);}
+    &12 { margin-bottom: rem(12);}
+    &14 { margin-bottom: rem(14);}
+    &15 { margin-bottom: rem(15);}
+    &16 { margin-bottom: rem(16);}
+    &18 { margin-bottom: rem(18);}
+    &20 { margin-bottom: rem(20);}
+    &22 { margin-bottom: rem(22);}
+    &24 { margin-bottom: rem(24);}
+    &25 { margin-bottom: rem(25);}
+    &26 { margin-bottom: rem(26);}
+    &28 { margin-bottom: rem(28);}
+    &30 { margin-bottom: rem(30);}
+    &32 { margin-bottom: rem(32);}
+    &34 { margin-bottom: rem(34);}
+    &36 { margin-bottom: rem(36);}
+    &38 { margin-bottom: rem(38);}
+    &40 { margin-bottom: rem(40);}
+    &46 { margin-bottom: rem(46);}
+    &48 { margin-bottom: rem(48);}
+    &50 { margin-bottom: rem(50);}
+    &60 { margin-bottom: rem(60);}
+    &70 { margin-bottom: rem(70);}
+    &80 { margin-bottom: rem(80);}
+    &90 { margin-bottom: rem(90);}
+    &100 { margin-bottom: rem(100);}
+    &120 { margin-bottom: rem(120);}
+    &140 { margin-bottom: rem(140);}
+    &160 { margin-bottom: rem(160);}
+    &180 { margin-bottom: rem(180);}
+    &200 { margin-bottom: rem(200);}
+}
+.ml{
+    &0 { margin-left: rem(0);}
+    &2 { margin-left: rem(2);}
+    &3 { margin-left: rem(3);}
+    &4 { margin-left: rem(4);}
+    &5 { margin-left: rem(5);}
+    &6 { margin-left: rem(6);}
+    &8 { margin-left: rem(8);}
+    &10 { margin-left: rem(10);}
+    &12 { margin-left: rem(12);}
+    &14 { margin-left: rem(14);}
+    &15 { margin-left: rem(15);}
+    &16 { margin-left: rem(16);}
+    &18 { margin-left: rem(18);}
+    &20 { margin-left: rem(20);}
+    &22 { margin-left: rem(22);}
+    &24 { margin-left: rem(24);}
+    &25 { margin-left: rem(25);}
+    &26 { margin-left: rem(26);}
+    &28 { margin-left: rem(28);}
+    &30 { margin-left: rem(30);}
+    &32 { margin-left: rem(32);}
+    &34 { margin-left: rem(34);}
+    &36 { margin-left: rem(36);}
+    &38 { margin-left: rem(38);}
+    &40 { margin-left: rem(40);}
+    &46 { margin-left: rem(46);}
+    &48 { margin-left: rem(48);}
+    &50 { margin-left: rem(50);}
+    &60 { margin-left: rem(60);}
+    &70 { margin-left: rem(70);}
+    &80 { margin-left: rem(80);}
+    &90 { margin-left: rem(90);}
+    &100 { margin-left: rem(100);}
+    &120 { margin-left: rem(120);}
+    &140 { margin-left: rem(140);}
+    &160 { margin-left: rem(160);}
+    &180 { margin-left: rem(180);}
+    &200 { margin-left: rem(200);}
+}
+.mr{
+    &0 { margin-right: rem(0);}
+    &2 { margin-right: rem(2);}
+    &3 { margin-right: rem(3);}
+    &4 { margin-right: rem(4);}
+    &5 { margin-right: rem(5);}
+    &6 { margin-right: rem(6);}
+    &7 { margin-right: rem(7);}
+    &8 { margin-right: rem(8);}
+    &10 { margin-right: rem(10);}
+    &12 { margin-right: rem(12);}
+    &14 { margin-right: rem(14);}
+    &15 { margin-right: rem(15);}
+    &16 { margin-right: rem(16);}
+    &18 { margin-right: rem(18);}
+    &20 { margin-right: rem(20);}
+    &22 { margin-right: rem(22);}
+    &24 { margin-right: rem(24);}
+    &25 { margin-right: rem(25);}
+    &26 { margin-right: rem(26);}
+    &28 { margin-right: rem(28);}
+    &30 { margin-right: rem(30);}
+    &32 { margin-right: rem(32);}
+    &34 { margin-right: rem(34);}
+    &36 { margin-right: rem(36);}
+    &38 { margin-right: rem(38);}
+    &40 { margin-right: rem(40);}
+    &46 { margin-right: rem(46);}
+    &48 { margin-right: rem(48);}
+    &50 { margin-right: rem(50);}
+    &60 { margin-right: rem(60);}
+    &70 { margin-right: rem(70);}
+    &80 { margin-right: rem(80);}
+    &90 { margin-right: rem(90);}
+    &100 { margin-right: rem(100);}
+    &120 { margin-right: rem(120);}
+    &140 { margin-right: rem(140);}
+    &160 { margin-right: rem(160);}
+    &180 { margin-right: rem(180);}
+    &200 { margin-right: rem(200);}
+}
+.pt{
+    &0 { padding-top: rem(0);}
+    &2 { padding-top: rem(2);}
+    &3 { padding-top: rem(3);}
+    &4 { padding-top: rem(4);}
+    &5 { padding-top: rem(5);}
+    &6 { padding-top: rem(6);}
+    &8 { padding-top: rem(8);}
+    &10 { padding-top: rem(10);}
+    &12 { padding-top: rem(12);}
+    &14 { padding-top: rem(14);}
+    &15 { padding-top: rem(15);}
+    &16 { padding-top: rem(16);}
+    &18 { padding-top: rem(18);}
+    &20 { padding-top: rem(20);}
+    &22 { padding-top: rem(22);}
+    &24 { padding-top: rem(24);}
+    &25 { padding-top: rem(25);}
+    &26 { padding-top: rem(26);}
+    &28 { padding-top: rem(28);}
+    &30 { padding-top: rem(30);}
+    &32 { padding-top: rem(32);}
+    &34 { padding-top: rem(34);}
+    &36 { padding-top: rem(36);}
+    &38 { padding-top: rem(38);}
+    &40 { padding-top: rem(40);}
+    &46 { padding-top: rem(46);}
+    &48 { padding-top: rem(48);}
+    &50 { padding-top: rem(50);}
+    &60 { padding-top: rem(60);}
+    &70 { padding-top: rem(70);}
+    &80 { padding-top: rem(80);}
+    &90 { padding-top: rem(90);}
+    &100 { padding-top: rem(100);}
+    &120 { padding-top: rem(120);}
+    &140 { padding-top: rem(140);}
+    &160 { padding-top: rem(160);}
+    &180 { padding-top: rem(180);}
+    &200 { padding-top: rem(200);}
+}
+
+.pl{
+    &0 { padding-left: rem(0);}
+    &2 { padding-left: rem(2);}
+    &3 { padding-left: rem(3);}
+    &4 { padding-left: rem(4);}
+    &5 { padding-left: rem(5);}
+    &6 { padding-left: rem(6);}
+    &8 { padding-left: rem(8);}
+    &10 { padding-left: rem(10);}
+    &12 { padding-left: rem(12);}
+    &14 { padding-left: rem(14);}
+    &15 { padding-left: rem(15);}
+    &16 { padding-left: rem(16);}
+    &18 { padding-left: rem(18);}
+    &20 { padding-left: rem(20);}
+    &22 { padding-left: rem(22);}
+    &24 { padding-left: rem(24);}
+    &25 { padding-left: rem(25);}
+    &26 { padding-left: rem(26);}
+    &28 { padding-left: rem(28);}
+    &30 { padding-left: rem(30);}
+    &32 { padding-left: rem(32);}
+    &34 { padding-left: rem(34);}
+    &36 { padding-left: rem(36);}
+    &38 { padding-left: rem(38);}
+    &40 { padding-left: rem(40);}
+    &46 { padding-left: rem(46);}
+    &48 { padding-left: rem(48);}
+    &50 { padding-left: rem(50);}
+    &60 { padding-left: rem(60);}
+    &70 { padding-left: rem(70);}
+    &80 { padding-left: rem(80);}
+    &90 { padding-left: rem(90);}
+    &100 { padding-left: rem(100);}
+    &120 { padding-left: rem(120);}
+    &140 { padding-left: rem(140);}
+    &160 { padding-left: rem(160);}
+    &180 { padding-left: rem(180);}
+    &200 { padding-left: rem(200);}
+}
+.pr{
+    &0 { padding-right: rem(0);}
+    &2 { padding-right: rem(2);}
+    &3 { padding-right: rem(3);}
+    &4 { padding-right: rem(4);}
+    &5 { padding-right: rem(5);}
+    &6 { padding-right: rem(6);}
+    &8 { padding-right: rem(8);}
+    &10 { padding-right: rem(10);}
+    &12 { padding-right: rem(12);}
+    &14 { padding-right: rem(14);}
+    &15 { padding-right: rem(15);}
+    &16 { padding-right: rem(16);}
+    &18 { padding-right: rem(18);}
+    &20 { padding-right: rem(20);}
+    &22 { padding-right: rem(22);}
+    &24 { padding-right: rem(24);}
+    &25 { padding-right: rem(25);}
+    &26 { padding-right: rem(26);}
+    &28 { padding-right: rem(28);}
+    &30 { padding-right: rem(30);}
+    &32 { padding-right: rem(32);}
+    &34 { padding-right: rem(34);}
+    &36 { padding-right: rem(36);}
+    &38 { padding-right: rem(38);}
+    &40 { padding-right: rem(40);}
+    &46 { padding-right: rem(46);}
+    &48 { padding-right: rem(48);}
+    &50 { padding-right: rem(50);}
+    &60 { padding-right: rem(60);}
+    &70 { padding-right: rem(70);}
+    &80 { padding-right: rem(80);}
+    &90 { padding-right: rem(90);}
+    &100 { padding-right: rem(100);}
+    &120 { padding-right: rem(120);}
+    &140 { padding-right: rem(140);}
+    &160 { padding-right: rem(160);}
+    &180 { padding-right: rem(180);}
+    &200 { padding-right: rem(200);}
+}
+.pb{
+    &0 { padding-bottom: rem(0);}
+    &2 { padding-bottom: rem(2);}
+    &3 { padding-bottom: rem(3);}
+    &4 { padding-bottom: rem(4);}
+    &5 { padding-bottom: rem(5);}
+    &6 { padding-bottom: rem(6);}
+    &8 { padding-bottom: rem(8);}
+    &10 { padding-bottom: rem(10);}
+    &12 { padding-bottom: rem(12);}
+    &14 { padding-bottom: rem(14);}
+    &15 { padding-bottom: rem(15);}
+    &16 { padding-bottom: rem(16);}
+    &18 { padding-bottom: rem(18);}
+    &20 { padding-bottom: rem(20);}
+    &22 { padding-bottom: rem(22);}
+    &24 { padding-bottom: rem(24);}
+    &25 { padding-bottom: rem(25);}
+    &26 { padding-bottom: rem(26);}
+    &28 { padding-bottom: rem(28);}
+    &30 { padding-bottom: rem(30);}
+    &32 { padding-bottom: rem(32);}
+    &34 { padding-bottom: rem(34);}
+    &36 { padding-bottom: rem(36);}
+    &38 { padding-bottom: rem(38);}
+    &40 { padding-bottom: rem(40);}
+    &46 { padding-bottom: rem(46);}
+    &48 { padding-bottom: rem(48);}
+    &50 { padding-bottom: rem(50);}
+    &60 { padding-bottom: rem(60);}
+    &70 { padding-bottom: rem(70);}
+    &80 { padding-bottom: rem(80);}
+    &90 { padding-bottom: rem(90);}
+    &100 { padding-bottom: rem(100);}
+    &120 { padding-bottom: rem(120);}
+    &140 { padding-bottom: rem(140);}
+    &160 { padding-bottom: rem(160);}
+    &180 { padding-bottom: rem(180);}
+    &200 { padding-bottom: rem(200);}
+}
